@@ -1,0 +1,8 @@
+[30-01-2026 03:13:06] Initializing BigDoors build:
+Release:              true
+Commit:               master: 2d797d12590ac6f6c6b1250cae2d461bf9afc3c5 dirty:true (2025-12-12T14:47:20Z)
+Actions Build number: 7
+Actions Build id:     20412286518
+Build sequence num.:  -1
+[30-01-2026 03:13:33] Starting BigDoors version: 0.1.8.65
+[30-01-2026 03:13:38] New file created at plugins/BigDoors/doorDB.db

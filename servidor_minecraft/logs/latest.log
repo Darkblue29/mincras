@@ -1,0 +1,333 @@
+[03:12:51] [ServerMain/ERROR]: [DirectoryProviderSource] Error loading plugin: Directory 'plugins/tool-trims-DP-v2-2-1a.jar' failed to load!
+java.lang.RuntimeException: Directory 'plugins/tool-trims-DP-v2-2-1a.jar' failed to load!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:59) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.lambda$registerProviders$1(DirectoryProviderSource.java:34) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.Main.main(Main.java:137) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.Main.main(Main.java:324) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Directory 'plugins/tool-trims-DP-v2-2-1a.jar' does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:54) ~[paper-1.20.1.jar:git-Paper-196]
+	... 20 more
+[03:12:52] [ServerMain/ERROR]: [EntrypointUtil] de/oliver/fancyholograms/loaders/FancyHologramsLoader has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+java.lang.UnsupportedClassVersionError: de/oliver/fancyholograms/loaders/FancyHologramsLoader has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1017) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at io.papermc.paper.plugin.entrypoint.classloader.PaperSimplePluginClassLoader.findClass(PaperSimplePluginClassLoader.java:103) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:592) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:469) ~[?:?]
+	at io.papermc.paper.plugin.provider.util.ProviderUtil.loadClass(ProviderUtil.java:51) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.util.ProviderUtil.loadClass(ProviderUtil.java:29) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.type.paper.PaperPluginProviderFactory.build(PaperPluginProviderFactory.java:37) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.provider.type.paper.PaperPluginProviderFactory.build(PaperPluginProviderFactory.java:23) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.provider.type.PluginFileType.register(PluginFileType.java:71) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:57) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.lambda$registerProviders$1(DirectoryProviderSource.java:34) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.Main.main(Main.java:137) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.Main.main(Main.java:324) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[03:12:58] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[03:13:01] [ServerMain/INFO]: Loaded 7 recipes
+[03:13:02] [Server thread/INFO]: Starting minecraft server version 1.20.1
+[03:13:02] [Server thread/INFO]: Loading properties
+[03:13:02] [Server thread/INFO]: This server is running Paper version git-Paper-196 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 773dd72)
+[03:13:03] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[03:13:03] [Server thread/INFO]: Using 4 threads for Netty based IO
+[03:13:03] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[03:13:03] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[03:13:04] [Server thread/INFO]: Default game type: SURVIVAL
+[03:13:04] [Server thread/INFO]: Generating keypair
+[03:13:04] [Server thread/INFO]: Starting Minecraft server on *:25565
+[03:13:04] [Server thread/INFO]: Using epoll channel type
+[03:13:04] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[03:13:04] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
+[03:13:04] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load 'plugins/ShopkeepersAddon-v2.23.3.2.jar' in 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [Shopkeepers, ProtocolLib]. Please download and install these plugins to run 'ShopkeepersAddon'.
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:82) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:510) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[03:13:04] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load 'plugins/skript-itemsadder-1.6.jar' in 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [Skript, ItemsAdder]. Please download and install these plugins to run 'skript-itemsadder'.
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:82) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:510) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[03:13:04] [Server thread/INFO]: [SpigotLibraryLoader] [BigDoors] Loading 1 libraries... please wait
+[03:13:05] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.18.2/byte-buddy-1.18.2.pom
+[03:13:05] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.18.2/byte-buddy-parent-1.18.2.pom
+[03:13:05] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.18.2/byte-buddy-1.18.2.jar
+[03:13:06] [Server thread/INFO]: [SpigotLibraryLoader] [BigDoors] Loaded library /workspaces/mincras/servidor_minecraft/libraries/net/bytebuddy/byte-buddy/1.18.2/byte-buddy-1.18.2.jar
+[03:13:06] [Server thread/INFO]: [BigDoors] New file created at plugins/BigDoors/log.txt
+[03:13:06] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_20_R1.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[03:13:12] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loading 4 libraries... please wait
+[03:13:12] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.pom
+[03:13:12] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-bom/4.16.0/adventure-bom-4.16.0.pom
+[03:13:12] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.pom
+[03:13:12] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/examination-api/1.3.0/examination-api-1.3.0.pom
+[03:13:12] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/22.0.0/annotations-22.0.0.pom
+[03:13:12] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/examination-string/1.3.0/examination-string-1.3.0.pom
+[03:13:12] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/24.1.0/annotations-24.1.0.pom
+[03:13:12] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.pom
+[03:13:12] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.pom
+[03:13:13] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-api/4.13.1/adventure-api-4.13.1.pom
+[03:13:13] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-bom/4.13.1/adventure-bom-4.13.1.pom
+[03:13:13] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-key/4.13.1/adventure-key-4.13.1.pom
+[03:13:13] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/24.0.1/annotations-24.0.1.pom
+[03:13:13] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.pom
+[03:13:13] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-legacy/4.13.1/adventure-text-serializer-legacy-4.13.1.pom
+[03:13:13] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson/4.13.1/adventure-text-serializer-gson-4.13.1.pom
+[03:13:13] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.pom
+[03:13:13] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.pom
+[03:13:13] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.pom
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.pom
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.pom
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.pom
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.pom
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/option/1.0.0/option-1.0.0.pom
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.0/gson-2.8.0.pom
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/google/code/gson/gson-parent/2.8.0/gson-parent-2.8.0.pom
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+[03:13:14] [BasicRepositoryConnector-repo.maven.apache.org-0-0/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
+[03:13:14] [BasicRepositoryConnector-repo.maven.apache.org-0-2/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[03:13:14] [BasicRepositoryConnector-repo.maven.apache.org-0-4/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[03:13:14] [BasicRepositoryConnector-repo.maven.apache.org-0-3/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[03:13:14] [BasicRepositoryConnector-repo.maven.apache.org-0-1/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
+[03:13:14] [BasicRepositoryConnector-repo.maven.apache.org-0-2/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[03:13:14] [BasicRepositoryConnector-repo.maven.apache.org-0-4/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-legacy/4.13.1/adventure-text-serializer-legacy-4.13.1.jar
+[03:13:14] [BasicRepositoryConnector-repo.maven.apache.org-0-3/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[03:13:14] [BasicRepositoryConnector-repo.maven.apache.org-0-0/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[03:13:14] [BasicRepositoryConnector-repo.maven.apache.org-0-2/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[03:13:14] [BasicRepositoryConnector-repo.maven.apache.org-0-4/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[03:13:14] [BasicRepositoryConnector-repo.maven.apache.org-0-3/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
+[03:13:14] [BasicRepositoryConnector-repo.maven.apache.org-0-1/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
+[03:13:14] [BasicRepositoryConnector-repo.maven.apache.org-0-0/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
+[03:13:14] [BasicRepositoryConnector-repo.maven.apache.org-0-4/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[03:13:14] [BasicRepositoryConnector-repo.maven.apache.org-0-2/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/net/kyori/option/1.0.0/option-1.0.0.jar
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mincras/servidor_minecraft/libraries/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mincras/servidor_minecraft/libraries/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mincras/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mincras/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mincras/servidor_minecraft/libraries/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mincras/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mincras/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mincras/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mincras/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.13.1/adventure-text-serializer-legacy-4.13.1.jar
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mincras/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mincras/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mincras/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mincras/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mincras/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mincras/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mincras/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mincras/servidor_minecraft/libraries/net/kyori/option/1.0.0/option-1.0.0.jar
+[03:13:14] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mincras/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[03:13:14] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'MythicMobs-5.11.0.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: io/lumine/mythic/bukkit/utils/plugin/LuminePlugin has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:127) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:510) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.UnsupportedClassVersionError: io/lumine/mythic/bukkit/utils/plugin/LuminePlugin has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1017) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:229) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:592) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:155) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:150) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1017) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:229) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:592) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:155) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:150) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:469) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:76) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:123) ~[paper-1.20.1.jar:git-Paper-196]
+	... 9 more
+[03:13:14] [Server thread/INFO]: [LibsDisguises] Loading server plugin LibsDisguises v10.0.37
+[03:13:15] [Server thread/WARN]: [LibsDisguises] Noticed you're using an older version of ProtocolLib (or not using it)! We're forcibly updating you!
+[03:13:15] [Server thread/ERROR]: [LibsDisguises] Looks like ProtocolLib's site may be down! Try download it manually from https://ci.dmulloy2.net/job/ProtocolLib/
+[03:13:15] [Server thread/WARN]: java.io.IOException: Server returned HTTP response code: 403 for URL: https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/build/libs/ProtocolLib.jar
+[03:13:15] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:2052)
+[03:13:15] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1641)
+[03:13:15] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+[03:13:15] [Server thread/WARN]: 	at Libs-Disguises-Plugin-1.20.1.jar//me.libraryaddict.disguise.utilities.DisguiseUtilities.updateProtocolLib(DisguiseUtilities.java:661)
+[03:13:15] [Server thread/WARN]: 	at Libs-Disguises-Plugin-1.20.1.jar//me.libraryaddict.disguise.LibsDisguises.onLoad(LibsDisguises.java:93)
+[03:13:15] [Server thread/WARN]: 	at io.papermc.paper.plugin.storage.ServerPluginProviderStorage.processProvided(ServerPluginProviderStorage.java:59)
+[03:13:15] [Server thread/WARN]: 	at io.papermc.paper.plugin.storage.ServerPluginProviderStorage.processProvided(ServerPluginProviderStorage.java:18)
+[03:13:15] [Server thread/WARN]: 	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:40)
+[03:13:15] [Server thread/WARN]: 	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36)
+[03:13:15] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:510)
+[03:13:15] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.e(DedicatedServer.java:273)
+[03:13:15] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.w(MinecraftServer.java:1100)
+[03:13:15] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317)
+[03:13:15] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:840)
+[03:13:15] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.7-SNAPSHOT-968
+[03:13:15] [Server thread/INFO]: [dynmap] version=git-Paper-196 (MC: 1.20.1)
+[03:13:15] [Server thread/INFO]: [dynmap] Mod Support API available
+[03:13:15] [Server thread/INFO]: [GodItems] Loading server plugin GodItems v3.0.1
+[03:13:15] [Server thread/INFO]: [GodItems] Optional dependency WorldGuard not found. WorldGuard related features will not work.
+[03:13:15] [Server thread/INFO]: [SetHome] Loading server plugin SetHome v0.1
+[03:13:15] [Server thread/INFO]: [BigDoors] Loading server plugin BigDoors v0.1.8.65
+[03:13:15] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.4.0
+[03:13:15] [Server thread/INFO]: [AxGraves] Loading server plugin AxGraves v1.18.0
+[03:13:15] [Server thread/INFO]: [AxGraves] Loading library commons-math3
+[03:13:15] [Server thread/INFO]: [AxGraves] Downloaded library https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar
+[03:13:15] [Server thread/INFO]: [AxGraves] Downloaded library https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/9.2/asm-commons-9.2.jar
+[03:13:15] [Server thread/INFO]: [AxGraves] Downloaded library https://repo1.maven.org/maven2/org/ow2/asm/asm/9.2/asm-9.2.jar
+[03:13:15] [Server thread/INFO]: [AxGraves] Downloaded library https://repo1.maven.org/maven2/me/lucko/jar-relocator/1.7/jar-relocator-1.7.jar
+[03:13:17] [Server thread/INFO]: [AxGraves] Relocations applied to commons-math3-3.6.1.jar
+[03:13:17] [Server thread/INFO]: [AxGraves] Loading library caffeine
+[03:13:17] [Server thread/INFO]: [AxGraves] Downloaded library https://repo1.maven.org/maven2/com/github/ben-manes/caffeine/caffeine/3.1.8/caffeine-3.1.8.jar
+[03:13:17] [Server thread/INFO]: [AxGraves] Relocations applied to caffeine-3.1.8.jar
+[03:13:17] [Server thread/INFO]: [InstantRestock] Loading server plugin InstantRestock v2.6.1
+[03:13:17] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[03:13:17] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[03:13:17] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[03:13:17] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[03:13:17] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[03:13:17] [Server thread/INFO]: Preparing level "world"
+[03:13:18] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[03:13:18] [Server thread/INFO]: Time elapsed: 528 ms
+[03:13:18] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[03:13:19] [Server thread/INFO]: Time elapsed: 151 ms
+[03:13:19] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[03:13:19] [Server thread/INFO]: Time elapsed: 125 ms
+[03:13:19] [Server thread/INFO]: [LibsDisguises] Enabling LibsDisguises v10.0.37
+[03:13:19] [Server thread/INFO]: [LibsDisguises] File Name: Libs-Disguises-Plugin-1.20.1.jar
+[03:13:19] [Server thread/INFO]: [LibsDisguises] Discovered nms version: v1_20_R1 (v1_20)
+[03:13:19] [Server thread/INFO]: [LibsDisguises] Jenkins Build: #1239
+[03:13:19] [Server thread/INFO]: [LibsDisguises] Build Date: 25/06/2023 07:08
+[03:13:19] [Server thread/INFO]: [LibsDisguises] If you own the plugin, place the premium jar downloaded from https://www.spigotmc.org/resources/libs-disguises.32453/ in plugins/LibsDisguises/
+[03:13:19] [Server thread/INFO]: [LibsDisguises] You are running the free version, commands limited to non-players and operators. (Console, Command Blocks, Admins)
+[03:13:19] [Server thread/ERROR]: Error occurred while enabling LibsDisguises v10.0.37 (Is it up to date?)
+java.lang.NullPointerException: Cannot invoke "org.bukkit.plugin.Plugin.getDescription()" because the return value of "org.bukkit.plugin.PluginManager.getPlugin(String)" is null
+	at me.libraryaddict.disguise.utilities.DisguiseUtilities.isProtocolLibOutdated(DisguiseUtilities.java:610) ~[Libs-Disguises-Plugin-1.20.1.jar:?]
+	at me.libraryaddict.disguise.LibsDisguises.onEnable(LibsDisguises.java:205) ~[Libs-Disguises-Plugin-1.20.1.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:281) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:189) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:104) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:507) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.enablePlugin(CraftServer.java:642) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.enablePlugins(CraftServer.java:553) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:635) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:434) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:308) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[03:13:19] [Server thread/INFO]: [LibsDisguises] Disabling LibsDisguises v10.0.37
+[03:13:19] [Server thread/INFO]: [dynmap] Enabling dynmap v3.7-SNAPSHOT-968
+[03:13:20] [Server thread/INFO]: [dynmap] Added 20 custom biome mappings
+[03:13:20] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
+[03:13:20] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
+[03:13:22] [Server thread/INFO]: [dynmap] Extracted files upgraded
+[03:13:22] [Server thread/INFO]: [dynmap] Mod Support processing completed
+[03:13:30] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
+[03:13:30] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
+[03:13:30] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
+[03:13:30] [Server thread/INFO]: [dynmap] Starting enter/exit processing
+[03:13:30] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
+[03:13:32] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
+[03:13:32] [Server thread/INFO]: [dynmap] version 3.7-SNAPSHOT-968 is enabled - core version 3.7-SNAPSHOT-985
+[03:13:32] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
+[03:13:32] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
+[03:13:32] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
+[03:13:32] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
+[03:13:32] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
+[03:13:32] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
+[03:13:32] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
+[03:13:32] [Server thread/INFO]: [dynmap] Enabled
+[03:13:32] [Server thread/INFO]: [GodItems] Enabling GodItems v3.0.1
+[03:13:32] [Server thread/INFO]: [GodItems] Made by MitromniZ and Cros_bow
+[03:13:32] [Server thread/INFO]: [GodItems] The texture pack is only available if you download the plugin from our patreon page
+[03:13:33] [Server thread/INFO]: [SetHome] Enabling SetHome v0.1
+[03:13:33] [Server thread/INFO]: [BigDoors] Enabling BigDoors v0.1.8.65
+[03:13:33] [Server thread/INFO]: [BigDoors] Power Block Types:
+[03:13:33] [Server thread/INFO]: [BigDoors]  - GOLD_BLOCK
+[03:13:33] [Server thread/INFO]: [BigDoors] Blacklisted materials:
+[03:13:33] [Server thread/INFO]: [BigDoors]  - BEDROCK
+[03:13:33] [Server thread/INFO]: [BigDoors]  - END_PORTAL
+[03:13:33] [Server thread/INFO]: [BigDoors]  - END_PORTAL_FRAME
+[03:13:33] [Server thread/INFO]: [BigDoors]  - NETHER_PORTAL
+[03:13:33] [Server thread/INFO]: [BigDoors] No materials Whitelisted!
+[03:13:33] [Server thread/INFO]: [BigDoors] DestroyListed materials:
+[03:13:33] [Server thread/INFO]: [BigDoors]  - LAVA
+[03:13:33] [Server thread/INFO]: [BigDoors]  - WATER
+[03:13:33] [Server thread/INFO]: [BigDoors]  - SNOW
+[03:13:33] [Server thread/INFO]: [BigDoors]  - FERN
+[03:13:33] [Server thread/INFO]: [BigDoors]  - GRASS
+[03:13:33] [Server thread/INFO]: [BigDoors]  - TALL_GRASS
+[03:13:33] [Server thread/INFO]: [BigDoors]  - TALL_GRASS
+[03:13:33] [Server thread/INFO]: [BigDoors]  - SEAGRASS
+[03:13:33] [Server thread/INFO]: [BigDoors]  - TALL_SEAGRASS
+[03:13:38] [Server thread/INFO]: [BigDoors] Generated Class FakePlayer$Generated in 4195ms.
+[03:13:38] [Server thread/INFO]: [BigDoors] Enabling stats! Thanks, it really helps!
+[03:13:38] [Server thread/INFO]: [TAB] Enabling TAB v5.4.0
+[03:13:39] [Server thread/INFO]: [TAB] Enabled in 350ms
+[03:13:39] [Server thread/INFO]: [AxGraves] Enabling AxGraves v1.18.0
+[03:13:39] [Server thread/INFO]: [InstantRestock] Enabling InstantRestock v2.6.1
+[03:13:40] [Server thread/INFO]: [InstantRestock] Enabled InstantRestock!
+[03:13:40] [Server thread/INFO]: Running delayed init tasks
+[03:13:40] [Server thread/INFO]: Done (37.885s)! For help, type "help"
+[03:13:40] [Server thread/INFO]: Timings Reset
+[03:13:40] [Server thread/INFO]: [BigDoors] Checking for updates...
+[03:13:40] [Thread-18/INFO]: [BigDoors] No new updates available.
+[03:13:44] [Craft Scheduler Thread - 5 - AxGraves/INFO]: AxGraves » There is a new version of AxGraves available! (current: 1.18.0 | latest: 1.26.0)
+[03:15:07] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
