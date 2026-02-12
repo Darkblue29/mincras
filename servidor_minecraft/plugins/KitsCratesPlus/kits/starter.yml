@@ -1,0 +1,43 @@
+id: starter
+type: INVENTORY
+cooldownSeconds: 86400
+permission: mcwar.kits.use.starter
+
+inventoryLayout:
+  slotMap:
+    "0":
+      chance: 100.0
+      item:
+        material: STONE_SWORD
+        amount: 1
+    "1":
+      chance: 100.0
+      item:
+        material: COOKED_BEEF
+        amount: 8
+  armor:
+    helmet:
+      chance: 100.0
+      item:
+        material: LEATHER_HELMET
+        amount: 1
+    chest:
+      chance: 100.0
+      item:
+        material: LEATHER_CHESTPLATE
+        amount: 1
+    legs:
+      chance: 100.0
+      item:
+        material: LEATHER_LEGGINGS
+        amount: 1
+    boots:
+      chance: 100.0
+      item:
+        material: LEATHER_BOOTS
+        amount: 1
+  offhand:
+    chance: 50.0
+    item:
+      material: SHIELD
+      amount: 1

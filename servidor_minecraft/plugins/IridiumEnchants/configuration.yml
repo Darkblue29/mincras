@@ -1,0 +1,93 @@
+---
+updateChecks: true
+prefix: "&e&lIridiumEnchants &8»"
+tierPurchaseSound: "entity.player.levelup"
+tierGUI: true
+enchantmentTable: true
+enchantingTableMin: 1
+enchantingTableMax: 3
+enchantmentCrystal:
+  material: "NETHER_STAR"
+  amount: 1
+  displayName: "&e&l%enchant%"
+  skullData: null
+  headData: null
+  headOwner: null
+  headOwnerUUID: null
+  model: null
+  lore:
+  - "&7Type: %type%"
+  - "&7Description: %description%"
+  slot: null
+enchantMethod: "INVENTORY"
+smelt:
+  IRON_ORE: "IRON_INGOT"
+  DEEPSLATE_IRON_ORE: "IRON_INGOT"
+  RAW_IRON: "IRON_INGOT"
+  RAW_GOLD: "GOLD_INGOT"
+  RAW_COPPER: "COPPER_INGOT"
+  GOLD_ORE: "GOLD_INGOT"
+  DEEPSLATE_GOLD_ORE: "GOLD_INGOT"
+  SAND: "GLASS"
+infusionBlacklist:
+- "BEDROCK"
+- "SPAWNER"
+- "CHEST"
+- "TRAPPED_CHEST"
+- "WATER"
+- "LAVA"
+tiers:
+  Common:
+    item:
+      material: "ENCHANTED_BOOK"
+      amount: 1
+      displayName: "&b&lCOMMON ENCHANTMENT"
+      skullData: null
+      headData: null
+      headOwner: null
+      headOwnerUUID: null
+      model: null
+      lore:
+      - "&e&lCOST: &7%cost% levels"
+      - ""
+      - "&e&l[!] &7Left Click to purchase a random common enchantment"
+      - "&e&l[!] &7Right Click to view all common enchantments"
+      slot: 11
+    experienceCost: 20
+    experienceType: "LEVEL"
+  Elite:
+    item:
+      material: "ENCHANTED_BOOK"
+      amount: 1
+      displayName: "&e&lELITE ENCHANTMENT"
+      skullData: null
+      headData: null
+      headOwner: null
+      headOwnerUUID: null
+      model: null
+      lore:
+      - "&e&lCOST: &7%cost% levels"
+      - ""
+      - "&e&l[!] &7Left Click to purchase a random elite enchantment"
+      - "&e&l[!] &7Right Click to view all elite enchantments"
+      slot: 13
+    experienceCost: 40
+    experienceType: "LEVEL"
+  Legendary:
+    item:
+      material: "ENCHANTED_BOOK"
+      amount: 1
+      displayName: "&6&lLEGENDARY ENCHANTMENT"
+      skullData: null
+      headData: null
+      headOwner: null
+      headOwnerUUID: null
+      model: null
+      lore:
+      - "&e&lCOST: &7%cost% levels"
+      - ""
+      - "&e&l[!] &7Left Click to purchase a random legendary enchantment"
+      - "&e&l[!] &7Right Click to view all legendary enchantments"
+      slot: 15
+    experienceCost: 60
+    experienceType: "LEVEL"

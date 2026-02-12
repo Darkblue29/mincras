@@ -1,0 +1,29 @@
+---
+reloaded: "%prefix% &7Configuration has been reloaded."
+noPermission: "%prefix% &7You don't have permission for that."
+mustBeAPlayer: "%prefix% &7You must be a player to execute this command."
+notAPlayer: "%prefix% &7That player doesn't exist."
+unknownCommand: "%prefix% &7Unknown Command, Try /ce help."
+helpCommandHeader: "&8===== &e&lIridiumEnchants Help &r&8====="
+helpCommandMessage: "&e/ce %command%&r: &7%description%"
+helpCommandFooter: " &7Page %page% of %max_page% "
+helpCommandPreviousPage: "&e<<"
+helpCommandNextPage: "&e>>"
+helpCommandNextPageHover: "&7Click to go to the next page."
+helpCommandPreviousPageHover: "&7Click to go to the previous page."
+activeCooldown: "%prefix% &7You cannot do that due to a running cooldown, please wait\
+  \ %hours% hour(s), %minutes% minute(s), %seconds% second(s)!"
+notAnEnchantment: "%prefix% &7That enchantment doesn't exist."
+notANumber: "%prefix% &7That is not a valid number."
+invalidEnchantmentLevel: "%prefix% &7That enchantment does not have that level."
+notEnoughExperience: "%prefix% &7You don't have enough experience to purchase a %tier%\
+  \ enchantment."
+gotEnchantmentFromTier: "%prefix% &7You purchased a &e%tier% &7enchantment and received\
+  \ a &e%enchant% %level% &7crystal."
+gavePlayerEnchantment: "%prefix% &7You gave %player% a &e%enchant% %level% &7crystal."
+noTier: "%prefix% &7No tier by that name exists."
+gkitOnCooldown: "%prefix% &7The %gkit% Gkit is on cooldown for %days% Days %hours%\
+  \ Hours %minutes% Minutes and %seconds% Seconds"
+noGkit: "%prefix% &7No GKit by that name exists."
+gaveGKit: "%prefix% &7You gave the %name% gkit to %player%."
+recievedGKit: "%prefix% &7You received a %name% gkit from %player%."

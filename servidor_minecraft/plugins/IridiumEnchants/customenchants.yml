@@ -1,0 +1,1356 @@
+---
+customEnchants:
+  Speed:
+    displayName: "&7Speed"
+    description: "Gives you an unlimited Speed effect"
+    type: "Boots"
+    trigger: "PASSIVE:20"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:SPEED:1:5"
+        conditions:
+        - "ISWEARING"
+      2:
+        chance: 100.0
+        tiers:
+        - "Elite"
+        effects:
+        - "POTION:SPEED:2:5"
+        conditions:
+        - "ISWEARING"
+      3:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "POTION:SPEED:3:5"
+        conditions:
+        - "ISWEARING"
+    enabled: true
+    enchantmentTable: true
+  Jump:
+    displayName: "&7Jump"
+    description: "Gives you an unlimited Jump Boost effect"
+    type: "Boots"
+    trigger: "PASSIVE:20"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:JUMP:1:5"
+        conditions:
+        - "ISWEARING"
+      2:
+        chance: 100.0
+        tiers:
+        - "Elite"
+        effects:
+        - "POTION:JUMP:2:5"
+        conditions:
+        - "ISWEARING"
+      3:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "POTION:JUMP:3:5"
+        conditions:
+        - "ISWEARING"
+    enabled: true
+    enchantmentTable: true
+  Visionary:
+    displayName: "&7Visionary"
+    description: "Gives you an unlimited Night Vision effect"
+    type: "Helmet"
+    trigger: "PASSIVE:20"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:NIGHT_VISION:1:5"
+        conditions:
+        - "ISWEARING"
+    enabled: true
+    enchantmentTable: true
+  Netherskin:
+    displayName: "&7Netherskin"
+    description: "Gives you an unlimited Fire Resistance effect"
+    type: "Chestplate"
+    trigger: "PASSIVE:20"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:FIRE_RESISTANCE:1:5"
+        conditions:
+        - "ISWEARING"
+    enabled: true
+    enchantmentTable: true
+  Aquatic:
+    displayName: "&7Aquatic"
+    description: "Gives you an unlimited Water Breathing effect"
+    type: "Helmet"
+    trigger: "PASSIVE:20"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:WATER_BREATHING:1:5"
+        conditions:
+        - "ISWEARING"
+    enabled: true
+    enchantmentTable: true
+  Replenish:
+    displayName: "&7Replenish"
+    description: "Replenishes your hunger every 30 seconds"
+    type: "Helmet"
+    trigger: "PASSIVE:600"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "FEED:1"
+        conditions:
+        - "ISWEARING"
+      2:
+        chance: 100.0
+        tiers:
+        - "Elite"
+        effects:
+        - "FEED:2"
+        conditions:
+        - "ISWEARING"
+      3:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "FEED:3"
+        conditions:
+        - "ISWEARING"
+    enabled: true
+    enchantmentTable: true
+  Jacket:
+    displayName: "&7Jacket"
+    description: "Gives you extra health"
+    type: "Armor"
+    trigger: "PASSIVE:20"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "ADD_EXTRA_HEALTH:1:40"
+        conditions:
+        - "ISWEARING"
+      2:
+        chance: 100.0
+        tiers:
+        - "Elite"
+        effects:
+        - "ADD_EXTRA_HEALTH:2:40"
+        conditions:
+        - "ISWEARING"
+      3:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "ADD_EXTRA_HEALTH:3:40"
+        conditions:
+        - "ISWEARING"
+    enabled: true
+    enchantmentTable: true
+  Resistance:
+    displayName: "&7Resistance"
+    description: "Gives you a permanent resistance effect when below half health"
+    type: "Chestplate"
+    trigger: "PASSIVE:20"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:DAMAGE_RESISTANCE:1:5"
+        conditions:
+        - "ISWEARING"
+        - "PLAYER_HEALTH <= 10"
+      2:
+        chance: 100.0
+        tiers:
+        - "Elite"
+        effects:
+        - "POTION:DAMAGE_RESISTANCE:2:5"
+        conditions:
+        - "ISWEARING"
+        - "PLAYER_HEALTH <= 10"
+      3:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "POTION:DAMAGE_RESISTANCE:3:5"
+        conditions:
+        - "ISWEARING"
+        - "PLAYER_HEALTH <= 10"
+    enabled: true
+    enchantmentTable: true
+  Haste:
+    displayName: "&7Haste"
+    description: "Gives you an unlimited Haste effect"
+    type: "Pickaxe"
+    trigger: "PASSIVE:20"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:FAST_DIGGING:1:5"
+        conditions: []
+      2:
+        chance: 100.0
+        tiers:
+        - "Elite"
+        effects:
+        - "POTION:FAST_DIGGING:2:5"
+        conditions: []
+      3:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "POTION:FAST_DIGGING:3:5"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Strength:
+    displayName: "&7Strength"
+    description: "Gives you an unlimited Strength effect"
+    type: "Sword"
+    trigger: "PASSIVE:20"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:INCREASE_DAMAGE:1:5"
+        conditions: []
+      2:
+        chance: 100.0
+        tiers:
+        - "Elite"
+        effects:
+        - "POTION:INCREASE_DAMAGE:2:5"
+        conditions: []
+      3:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "POTION:INCREASE_DAMAGE:3:5"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Poison:
+    displayName: "&7Poison"
+    description: "Gives your opponent poison effect"
+    type: "Sword"
+    trigger: "PLAYER_DAMAGE"
+    levels:
+      1:
+        chance: 10.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:POISON:1:5:TARGET"
+        conditions: []
+      2:
+        chance: 10.0
+        tiers:
+        - "Elite"
+        effects:
+        - "POTION:POISON:2:5:TARGET"
+        conditions: []
+      3:
+        chance: 10.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "POTION:POISON:3:5:TARGET"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Confusion:
+    displayName: "&7Confusion"
+    description: "Gives your opponent nausea effect"
+    type: "Sword"
+    trigger: "PLAYER_DAMAGE"
+    levels:
+      1:
+        chance: 10.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:CONFUSION:1:5:TARGET"
+        conditions: []
+      2:
+        chance: 10.0
+        tiers:
+        - "Elite"
+        effects:
+        - "POTION:CONFUSION:2:5:TARGET"
+        conditions: []
+      3:
+        chance: 10.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "POTION:CONFUSION:3:5:TARGET"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Wither:
+    displayName: "&7Wither"
+    description: "Gives your opponent wither effect"
+    type: "Axe"
+    trigger: "PLAYER_DAMAGE"
+    levels:
+      1:
+        chance: 10.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:WITHER:1:5:TARGET"
+        conditions: []
+      2:
+        chance: 10.0
+        tiers:
+        - "Elite"
+        effects:
+        - "POTION:WITHER:2:5:TARGET"
+        conditions: []
+      3:
+        chance: 10.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "POTION:WITHER:3:5:TARGET"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Ignition:
+    displayName: "&7Ignition"
+    description: "Sets your attacker on fire"
+    type: "Chestplate"
+    trigger: "DEFENCE"
+    levels:
+      1:
+        chance: 10.0
+        tiers:
+        - "Common"
+        effects:
+        - "FIRE:40:TARGET"
+        conditions:
+        - "ISWEARING"
+      2:
+        chance: 10.0
+        tiers:
+        - "Elite"
+        effects:
+        - "FIRE:80:TARGET"
+        conditions:
+        - "ISWEARING"
+      3:
+        chance: 10.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "FIRE:100:TARGET"
+        conditions:
+        - "ISWEARING"
+    enabled: true
+    enchantmentTable: true
+  Slowness:
+    displayName: "&7Slowness"
+    description: "Gives your opponent a slowness effect"
+    type: "Bows"
+    trigger: "PLAYER_DAMAGE_PROJECTILE"
+    levels:
+      1:
+        chance: 25.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:SLOW:1:5:TARGET"
+        conditions: []
+      2:
+        chance: 25.0
+        tiers:
+        - "Elite"
+        effects:
+        - "POTION:SLOW:2:5:TARGET"
+        conditions: []
+      3:
+        chance: 25.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "POTION:SLOW:3:5:TARGET"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Blindness:
+    displayName: "&7Blindness"
+    description: "Gives your opponent a blindness effect"
+    type: "Bows"
+    trigger: "PLAYER_DAMAGE_PROJECTILE"
+    levels:
+      1:
+        chance: 25.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:BLINDNESS:1:5:TARGET"
+        conditions: []
+      2:
+        chance: 25.0
+        tiers:
+        - "Elite"
+        effects:
+        - "POTION:BLINDNESS:2:5:TARGET"
+        conditions: []
+      3:
+        chance: 25.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "POTION:BLINDNESS:3:5:TARGET"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Explosive:
+    displayName: "&7Explosive"
+    description: "Chance for your arrows to explode on impact"
+    type: "Bows"
+    trigger: "PLAYER_DAMAGE_PROJECTILE"
+    levels:
+      1:
+        chance: 15.0
+        tiers:
+        - "Common"
+        effects:
+        - "EXPLODE:1:TRUE:TRUE:TARGET"
+        conditions: []
+      2:
+        chance: 15.0
+        tiers:
+        - "Elite"
+        effects:
+        - "EXPLODE:2:TRUE:TRUE:TARGET"
+        conditions: []
+      3:
+        chance: 15.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "EXPLODE:3:TRUE:TRUE:TARGET"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Multishot:
+    displayName: "&7Multishot"
+    description: "Shoots multiple arrows"
+    type: "Bows"
+    trigger: "BOW_FIRE"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "MULTISHOT:1"
+        conditions: []
+      2:
+        chance: 100.0
+        tiers:
+        - "Elite"
+        effects:
+        - "MULTISHOT:2"
+        conditions: []
+      3:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "MULTISHOT:3"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Blazingtouch:
+    displayName: "&7BlazingTouch"
+    description: "Automatically smelts the ores you mine"
+    type: "Pickaxe"
+    trigger: "BLOCK_BREAK"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "SMELT"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Infusion:
+    displayName: "&7Infusion"
+    description: "Breaks all blocks in the nearby area"
+    type: "Pickaxe"
+    trigger: "BLOCK_BREAK"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "INFUSION:1:FALSE"
+        conditions: []
+      2:
+        chance: 100.0
+        tiers:
+        - "Elite"
+        effects:
+        - "INFUSION:2:FALSE"
+        conditions: []
+      3:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "INFUSION:3:FALSE"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Ninja:
+    displayName: "&7Ninja"
+    description: "Gives you an Invisibility potion when you Sneak"
+    type: "Chestplate"
+    trigger: "PASSIVE:5"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:INVISIBILITY:1:1"
+        conditions:
+        - "ISWEARING"
+        - "ISSNEAKING"
+    enabled: true
+    enchantmentTable: true
+  Cursed:
+    displayName: "&7Cursed"
+    description: "Gives all enemies in a radius of 10 Slowness"
+    type: "Chestplate"
+    trigger: "PASSIVE:20"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "AURA:ENEMY:10:POTION:SLOW:1:5:TARGET"
+        conditions:
+        - "ISWEARING"
+      2:
+        chance: 100.0
+        tiers:
+        - "Elite"
+        effects:
+        - "AURA:ENEMY:10:POTION:SLOW:2:5:TARGET"
+        conditions:
+        - "ISWEARING"
+      3:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "AURA:ENEMY:10:POTION:SLOW:3:5:TARGET"
+        conditions:
+        - "ISWEARING"
+    enabled: true
+    enchantmentTable: true
+  Leader:
+    displayName: "&7Leader"
+    description: "Gives all allies in a radius of 10 Strength"
+    type: "Chestplate"
+    trigger: "PASSIVE:20"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "AURA:ALLY:10:POTION:INCREASE_DAMAGE:1:5:TARGET"
+        conditions:
+        - "ISWEARING"
+      2:
+        chance: 100.0
+        tiers:
+        - "Elite"
+        effects:
+        - "AURA:ALLY:10:POTION:INCREASE_DAMAGE:2:5:TARGET"
+        conditions:
+        - "ISWEARING"
+      3:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "AURA:ALLY:10:POTION:INCREASE_DAMAGE:3:5:TARGET"
+        conditions:
+        - "ISWEARING"
+    enabled: true
+    enchantmentTable: true
+  Commander:
+    displayName: "&7Commander"
+    description: "Gives all allies in a radius of 10 Haste"
+    type: "Chestplate"
+    trigger: "PASSIVE:20"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "AURA:ALLY:10:POTION:FAST_DIGGING:1:5:TARGET"
+        conditions:
+        - "ISWEARING"
+      2:
+        chance: 100.0
+        tiers:
+        - "Elite"
+        effects:
+        - "AURA:ALLY:10:POTION:FAST_DIGGING:2:5:TARGET"
+        conditions:
+        - "ISWEARING"
+      3:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "AURA:ALLY:10:POTION:FAST_DIGGING:3:5:TARGET"
+        conditions:
+        - "ISWEARING"
+    enabled: true
+    enchantmentTable: true
+  Holy:
+    displayName: "&7Holy"
+    description: "Gives all allies in a radius of 10 Regeneration"
+    type: "Chestplate"
+    trigger: "PASSIVE:20"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "AURA:ALLY:10:POTION:REGENERATION:1:1:TARGET"
+        conditions:
+        - "ISWEARING"
+      2:
+        chance: 100.0
+        tiers:
+        - "Elite"
+        effects:
+        - "AURA:ALLY:10:POTION:REGENERATION:1:3:TARGET"
+        conditions:
+        - "ISWEARING"
+      3:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "AURA:ALLY:10:POTION:REGENERATION:1:5:TARGET"
+        conditions:
+        - "ISWEARING"
+    enabled: true
+    enchantmentTable: true
+  Blaze:
+    displayName: "&7Blaze"
+    description: "Sets all enemies in a radius of 10 on fire"
+    type: "Chestplate"
+    trigger: "PASSIVE:20"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "AURA:ENEMY:10:FIRE:40:TARGET"
+        conditions:
+        - "ISWEARING"
+    enabled: true
+    enchantmentTable: true
+  Berserk:
+    displayName: "&7Berserk"
+    description: "Gives all enemies in a radius of 10 Wither"
+    type: "Axe"
+    trigger: "PLAYER_DAMAGE"
+    levels:
+      1:
+        chance: 10.0
+        tiers:
+        - "Common"
+        effects:
+        - "AURA:ENEMY:10:POTION:WITHER:1:5:TARGET"
+        conditions: []
+      2:
+        chance: 10.0
+        tiers:
+        - "Elite"
+        effects:
+        - "AURA:ENEMY:10:POTION:WITHER:2:5:TARGET"
+        conditions: []
+      3:
+        chance: 10.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "AURA:ENEMY:10:POTION:WITHER:3:5:TARGET"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  ThunderousBlow:
+    displayName: "&7ThunderousBlow"
+    description: "Chance to strike your opponent with lightning"
+    type: "Bows"
+    trigger: "PLAYER_DAMAGE_PROJECTILE"
+    levels:
+      1:
+        chance: 10.0
+        tiers:
+        - "Common"
+        effects:
+        - "LIGHTNING:TARGET"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Thunder:
+    displayName: "&7Thunder"
+    description: "Chance to strike your opponent with lightning"
+    type: "Axe"
+    trigger: "PLAYER_DAMAGE"
+    levels:
+      1:
+        chance: 10.0
+        tiers:
+        - "Common"
+        effects:
+        - "LIGHTNING:TARGET"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Blunder:
+    displayName: "&7Blunder"
+    description: "Gives your opponent weakness effect"
+    type: "Sword"
+    trigger: "PLAYER_DAMAGE"
+    levels:
+      1:
+        chance: 10.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:WEAKNESS:1:5:TARGET"
+        conditions: []
+      2:
+        chance: 10.0
+        tiers:
+        - "Elite"
+        effects:
+        - "POTION:WEAKNESS:2:5:TARGET"
+        conditions: []
+      3:
+        chance: 10.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "POTION:WEAKNESS:3:5:TARGET"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Renewal:
+    displayName: "&7Renewal"
+    description: "Upon killing a player you receive regeneration for 5 seconds"
+    type: "Sword"
+    trigger: "PLAYER_KILL"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:REGENERATION:1:5"
+        conditions: []
+      2:
+        chance: 100.0
+        tiers:
+        - "Elite"
+        effects:
+        - "POTION:REGENERATION:2:5"
+        conditions: []
+      3:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "POTION:REGENERATION:3:5"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Inquisitive:
+    displayName: "&7Inquisitive"
+    description: "Gives you extra experience upon killing a mob"
+    type: "Axe"
+    trigger: "ENTITY_KILL"
+    levels:
+      1:
+        chance: 10.0
+        tiers:
+        - "Common"
+        effects:
+        - "EXPERIENCE:3"
+        conditions: []
+      2:
+        chance: 10.0
+        tiers:
+        - "Elite"
+        effects:
+        - "EXPERIENCE:6"
+        conditions: []
+      3:
+        chance: 10.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "EXPERIENCE:10"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Grace:
+    displayName: "&7Grace"
+    description: "Gives your allies regeneration upon your death"
+    type: "Chestplate"
+    trigger: "PLAYER_DEATH"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "AURA:ALLY:10:POTION:REGENERATION:1:5:TARGET"
+        conditions:
+        - "ISWEARING"
+      2:
+        chance: 100.0
+        tiers:
+        - "Elite"
+        effects:
+        - "AURA:ALLY:10:POTION:REGENERATION:2:5:TARGET"
+        conditions:
+        - "ISWEARING"
+      3:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "AURA:ALLY:10:POTION:REGENERATION:3:5:TARGET"
+        conditions:
+        - "ISWEARING"
+    enabled: true
+    enchantmentTable: true
+  Guardian:
+    displayName: "&7Guardian"
+    description: "Gives your allies resistance upon your death"
+    type: "Chestplate"
+    trigger: "PLAYER_DEATH"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "AURA:ALLY:10:POTION:DAMAGE_RESISTANCE:1:5:TARGET"
+        conditions:
+        - "ISWEARING"
+      2:
+        chance: 100.0
+        tiers:
+        - "Elite"
+        effects:
+        - "AURA:ALLY:10:POTION:DAMAGE_RESISTANCE:2:5:TARGET"
+        conditions:
+        - "ISWEARING"
+      3:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "AURA:ALLY:10:POTION:DAMAGE_RESISTANCE:3:5:TARGET"
+        conditions:
+        - "ISWEARING"
+    enabled: true
+    enchantmentTable: true
+  WarCry:
+    displayName: "&7WarCry"
+    description: "Gives your allies strength upon your death"
+    type: "Chestplate"
+    trigger: "PLAYER_DEATH"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "AURA:ALLY:10:POTION:DAMAGE_INCREASE:1:5:TARGET"
+        conditions:
+        - "ISWEARING"
+      2:
+        chance: 100.0
+        tiers:
+        - "Elite"
+        effects:
+        - "AURA:ALLY:10:POTION:DAMAGE_INCREASE:2:5:TARGET"
+        conditions:
+        - "ISWEARING"
+      3:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "AURA:ALLY:10:POTION:DAMAGE_INCREASE:3:5:TARGET"
+        conditions:
+        - "ISWEARING"
+    enabled: true
+    enchantmentTable: true
+  Lifesteal:
+    displayName: "&7Lifesteal"
+    description: "Chance to heal yourself when you attack an enemy"
+    type: "Sword"
+    trigger: "PLAYER_DAMAGE"
+    levels:
+      1:
+        chance: 10.0
+        tiers:
+        - "Common"
+        effects:
+        - "HEAL:1"
+        conditions: []
+      2:
+        chance: 10.0
+        tiers:
+        - "Elite"
+        effects:
+        - "HEAL:2"
+        conditions: []
+      3:
+        chance: 10.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "HEAL:3"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Impact:
+    displayName: "&7Impact"
+    description: "Chance to deal double damage"
+    type: "Sword"
+    trigger: "PLAYER_DAMAGE"
+    levels:
+      1:
+        chance: 5.0
+        tiers:
+        - "Common"
+        effects:
+        - "DAMAGE_MODIFIER:2"
+        conditions: []
+      2:
+        chance: 7.0
+        tiers:
+        - "Elite"
+        effects:
+        - "DAMAGE_MODIFIER:2"
+        conditions: []
+      3:
+        chance: 10.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "DAMAGE_MODIFIER:2"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Evade:
+    displayName: "&7Evade"
+    description: "Chance to evade an attack"
+    type: "Chestplate"
+    trigger: "DEFENCE"
+    levels:
+      1:
+        chance: 5.0
+        tiers:
+        - "Common"
+        effects:
+        - "DAMAGE_MODIFIER:0"
+        conditions:
+        - "ISWEARING"
+      2:
+        chance: 7.0
+        tiers:
+        - "Elite"
+        effects:
+        - "DAMAGE_MODIFIER:0"
+        conditions:
+        - "ISWEARING"
+      3:
+        chance: 10.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "DAMAGE_MODIFIER:0"
+        conditions:
+        - "ISWEARING"
+    enabled: true
+    enchantmentTable: true
+  Decapitate:
+    displayName: "&7Decapitate"
+    description: "Chance to drop an enemies head upon killing them"
+    type: "Axe"
+    trigger: "PLAYER_KILL"
+    levels:
+      1:
+        chance: 30.0
+        tiers:
+        - "Common"
+        effects:
+        - "DROP_HEAD:TARGET"
+        conditions: []
+      2:
+        chance: 50.0
+        tiers:
+        - "Elite"
+        effects:
+        - "DROP_HEAD:TARGET"
+        conditions: []
+      3:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "DROP_HEAD:TARGET"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  IceAspect:
+    displayName: "&7IceAspect"
+    description: "Chance to give your opponent slowness"
+    type: "Sword"
+    trigger: "PLAYER_DAMAGE"
+    levels:
+      1:
+        chance: 10.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:SLOW:1:5:TARGET"
+        conditions: []
+      2:
+        chance: 10.0
+        tiers:
+        - "Elite"
+        effects:
+        - "POTION:SLOW:1:5:TARGET"
+        conditions: []
+      3:
+        chance: 10.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "POTION:SLOW:1:5:TARGET"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  BloodLust:
+    displayName: "&7BloodLust"
+    description: "Chance to gain haste when attacking a player"
+    type: "Sword"
+    trigger: "PLAYER_DAMAGE"
+    levels:
+      1:
+        chance: 10.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:FAST_DIGGING:1:5"
+        conditions: []
+      2:
+        chance: 10.0
+        tiers:
+        - "Elite"
+        effects:
+        - "POTION:FAST_DIGGING:2:5"
+        conditions: []
+      3:
+        chance: 10.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "POTION:FAST_DIGGING:3:5"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Rage:
+    displayName: "&7Rage"
+    description: "Chance to gain strength when attacking a player if they are below\
+      \ 2.5 health"
+    type: "Sword"
+    trigger: "PLAYER_DAMAGE"
+    levels:
+      1:
+        chance: 10.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:DAMAGE_INCREASE:1:5"
+        conditions:
+        - "TARGET_HEALTH <= 5"
+      2:
+        chance: 10.0
+        tiers:
+        - "Elite"
+        effects:
+        - "POTION:DAMAGE_INCREASE:2:5"
+        conditions:
+        - "TARGET_HEALTH <= 5"
+      3:
+        chance: 10.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "POTION:DAMAGE_INCREASE:3:5"
+        conditions:
+        - "TARGET_HEALTH <= 5"
+    enabled: true
+    enchantmentTable: true
+  SoulReaper:
+    displayName: "&7SoulReaper"
+    description: "Chance to steal your opponents health"
+    type: "Bows"
+    trigger: "PLAYER_DAMAGE_PROJECTILE"
+    levels:
+      1:
+        chance: 25.0
+        tiers:
+        - "Common"
+        effects:
+        - "HEAL:1"
+        conditions: []
+      2:
+        chance: 25.0
+        tiers:
+        - "Elite"
+        effects:
+        - "HEAL:2"
+        conditions: []
+      3:
+        chance: 25.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "HEAL:3"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Frosty:
+    displayName: "&7Frosty"
+    description: "Makes the ground freeze around you"
+    type: "Boots"
+    trigger: "PASSIVE:5"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "REPLACE_NEAR:3:WATER:PACKED_ICE:20"
+        - "COAT:SNOW:3"
+        conditions:
+        - "ISWEARING"
+    enabled: true
+    enchantmentTable: true
+  Magma:
+    displayName: "&7Magma"
+    description: "Turns lava to Magma"
+    type: "Boots"
+    trigger: "PASSIVE:5"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "REPLACE_NEAR:3:LAVA:MAGMA:20"
+        conditions:
+        - "ISWEARING"
+    enabled: true
+    enchantmentTable: true
+  Webbed:
+    displayName: "&7Webbed"
+    description: "Covers your enemies in webs"
+    type: "Bows"
+    trigger: "PLAYER_DAMAGE_PROJECTILE"
+    levels:
+      1:
+        chance: 10.0
+        tiers:
+        - "Common"
+        effects:
+        - "REPLACE_NEAR:0:AIR:COBWEB:60:TARGET"
+        conditions: []
+      2:
+        chance: 15.0
+        tiers:
+        - "Elite"
+        effects:
+        - "REPLACE_NEAR:0:AIR:COBWEB:60:TARGET"
+        conditions: []
+      3:
+        chance: 25.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "REPLACE_NEAR:0:AIR:COBWEB:60:TARGET"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  SelfDestruct:
+    displayName: "&7SelfDestruct"
+    description: "Creates an explosion upon death"
+    type: "Chestplate"
+    trigger: "PLAYER_DEATH"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "EXPLODE:2:TRUE:TRUE"
+        conditions: []
+      2:
+        chance: 100.0
+        tiers:
+        - "Elite"
+        effects:
+        - "EXPLODE:3:TRUE:TRUE"
+        conditions: []
+      3:
+        chance: 100.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "EXPLODE:5:TRUE:TRUE"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Piercing:
+    displayName: "&7Piercing"
+    description: "Chance to deal double damage"
+    type: "Bows"
+    trigger: "PLAYER_DAMAGE_PROJECTILE"
+    levels:
+      1:
+        chance: 10.0
+        tiers:
+        - "Common"
+        effects:
+        - "DAMAGE_MODIFIER:2"
+        conditions: []
+      2:
+        chance: 15.0
+        tiers:
+        - "Elite"
+        effects:
+        - "DAMAGE_MODIFIER:2"
+        conditions: []
+      3:
+        chance: 25.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "DAMAGE_MODIFIER:2"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Venomous:
+    displayName: "&7Venomous"
+    description: "Chance to poison your opponent"
+    type: "Bows"
+    trigger: "PLAYER_DAMAGE_PROJECTILE"
+    levels:
+      1:
+        chance: 15.0
+        tiers:
+        - "Common"
+        effects:
+        - "POTION:POISON:1:5:TARGET"
+        conditions: []
+      2:
+        chance: 15.0
+        tiers:
+        - "Elite"
+        effects:
+        - "POTION:POISON:2:5:TARGET"
+        conditions: []
+      3:
+        chance: 15.0
+        tiers:
+        - "Legendary"
+        effects:
+        - "POTION:POISON:3:5:TARGET"
+        conditions: []
+    enabled: true
+    enchantmentTable: true
+  Telepathy:
+    displayName: "&7Telepathy"
+    description: "Puts all blocks you break into your inventory"
+    type: "Tool"
+    trigger: "BLOCK_BREAK"
+    levels:
+      1:
+        chance: 100.0
+        tiers:
+        - "Common"
+        effects:
+        - "TELEPATHY"
+        conditions: []
+    enabled: true
+    enchantmentTable: true

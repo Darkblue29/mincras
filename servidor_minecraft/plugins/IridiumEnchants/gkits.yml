@@ -1,0 +1,200 @@
+---
+gkits:
+  Frosty:
+    cooldown: 259200
+    permission: "iridiumenchants.gkits.frosty"
+    guiItem:
+      material: "SNOWBALL"
+      amount: 1
+      displayName: "&b&lFrosty Kit"
+      skullData: null
+      headData: null
+      headOwner: null
+      headOwnerUUID: null
+      model: null
+      lore:
+      - "&bCooldown: &7%days% Days %hours% Hours %minutes% Minutes and %seconds% Seconds"
+      - ""
+      - "&b&l[!] &7Left click to redeem this Gkit"
+      - "&b&l[!] &7Right click to preview this Gkit"
+      slot: 11
+    items:
+      1:
+        material: "DIAMOND_HELMET"
+        amount: 1
+        title: "&b&lFrosty Helmet"
+        enchantments:
+          PROTECTION: 4
+          UNBREAKING: 3
+          Replenish: 1
+      2:
+        material: "DIAMOND_CHESTPLATE"
+        amount: 1
+        title: "&b&lFrosty Chestplate"
+        enchantments:
+          PROTECTION: 4
+          UNBREAKING: 3
+          Resistance: 3
+          Evade: 3
+      3:
+        material: "DIAMOND_LEGGINGS"
+        amount: 1
+        title: "&b&lFrosty Leggings"
+        enchantments:
+          PROTECTION: 4
+          UNBREAKING: 3
+          Jacket: 3
+      4:
+        material: "DIAMOND_BOOTS"
+        amount: 1
+        title: "&b&lFrosty Boots"
+        enchantments:
+          PROTECTION: 4
+          UNBREAKING: 3
+          Frosty: 1
+          Speed: 3
+          Jump: 3
+      5:
+        material: "DIAMOND_SWORD"
+        amount: 1
+        title: "&b&lFrosty Sword"
+        enchantments:
+          SHARPNESS: 5
+          UNBREAKING: 3
+          IceAspect: 3
+          Poison: 3
+          Renewal: 3
+  Spooky:
+    cooldown: 259200
+    permission: "iridiumenchants.gkits.spooky"
+    guiItem:
+      material: "PUMPKIN"
+      amount: 1
+      displayName: "&c&lSpooky Kit"
+      skullData: null
+      headData: null
+      headOwner: null
+      headOwnerUUID: null
+      model: null
+      lore:
+      - "&cCooldown: &7%days% Days %hours% Hours %minutes% Minutes and %seconds% Seconds"
+      - ""
+      - "&c&l[!] &7Left click to redeem this Gkit"
+      - "&c&l[!] &7Right click to preview this Gkit"
+      slot: 13
+    items:
+      1:
+        material: "DIAMOND_HELMET"
+        amount: 1
+        title: "&c&lSpooky Helmet"
+        enchantments:
+          PROTECTION: 4
+          UNBREAKING: 3
+          Replenish: 1
+      2:
+        material: "DIAMOND_CHESTPLATE"
+        amount: 1
+        title: "&c&lSpooky Chestplate"
+        enchantments:
+          PROTECTION: 4
+          UNBREAKING: 3
+          Netherskin: 1
+          Ignition: 3
+          SelfDestruct: 3
+      3:
+        material: "DIAMOND_LEGGINGS"
+        amount: 1
+        title: "&c&lSpooky Leggings"
+        enchantments:
+          PROTECTION: 4
+          UNBREAKING: 3
+          Jacket: 3
+      4:
+        material: "DIAMOND_BOOTS"
+        amount: 1
+        title: "&c&lSpooky Boots"
+        enchantments:
+          PROTECTION: 4
+          UNBREAKING: 3
+          Magma: 1
+          Speed: 3
+          Jump: 3
+      5:
+        material: "DIAMOND_AXE"
+        amount: 1
+        title: "&c&lSpooky Axe"
+        enchantments:
+          SHARPNESS: 5
+          UNBREAKING: 3
+          Decapitate: 3
+          Wither: 3
+          Thunder: 1
+  Valentines:
+    cooldown: 259200
+    permission: "iridiumenchants.gkits.valentines"
+    guiItem:
+      material: "BOW"
+      amount: 1
+      displayName: "&d&lValentine's Kit"
+      skullData: null
+      headData: null
+      headOwner: null
+      headOwnerUUID: null
+      model: null
+      lore:
+      - "&dCooldown: &7%days% Days %hours% Hours %minutes% Minutes and %seconds% Seconds"
+      - ""
+      - "&d&l[!] &7Left click to redeem this Gkit"
+      - "&d&l[!] &7Right click to preview this Gkit"
+      slot: 15
+    items:
+      1:
+        material: "DIAMOND_HELMET"
+        amount: 1
+        title: "&d&lValentine's Helmet"
+        enchantments:
+          PROTECTION: 4
+          UNBREAKING: 3
+          Replenish: 1
+          Visionary: 1
+          Aquatic: 1
+      2:
+        material: "DIAMOND_CHESTPLATE"
+        amount: 1
+        title: "&d&lValentine's Chestplate"
+        enchantments:
+          PROTECTION: 4
+          UNBREAKING: 3
+          Resistance: 3
+          Evade: 3
+          Cursed: 3
+          Grace: 3
+      3:
+        material: "DIAMOND_LEGGINGS"
+        amount: 1
+        title: "&d&lValentine's Leggings"
+        enchantments:
+          PROTECTION: 4
+          UNBREAKING: 3
+          Jacket: 3
+      4:
+        material: "DIAMOND_BOOTS"
+        amount: 1
+        title: "&d&lValentine's Boots"
+        enchantments:
+          PROTECTION: 4
+          UNBREAKING: 3
+          Speed: 3
+          Jump: 3
+      5:
+        material: "BOW"
+        amount: 1
+        title: "&d&lValentine's Bow"
+        enchantments:
+          INFINITY: 5
+          UNBREAKING: 3
+          POWER: 5
+          Multishot: 3
+          SoulReaper: 3
+          Piercing: 3
+          Venomous: 3

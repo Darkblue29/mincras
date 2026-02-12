@@ -1,0 +1,93 @@
+engine:
+  maxAttempts: 10000
+  maxDepth: 1
+
+crateItem:
+  enabled: true
+  material: CHEST
+  displayName: <gradient:#f39c12:#f1c40f><bold>Crate</bold></gradient> <gray>%id%</gray>
+    <dark_gray>•</dark_gray> <aqua>mcwar.co</aqua>
+  lore:
+  - <gray>Right-click to open.
+  - '<dark_gray>Test server: <aqua>mcwar.co</aqua>'
+
+# Physical reward showcase after the crate GUI finishes.
+# Uses ItemDisplay entities to orbit the player, then converge and grant rewards.
+crateReveal:
+  enabled: true
+  radius: 2.0
+  height: 1.8
+  
+  # Spawn one reward display at a time for extra drama (tier6 spawns 6 displays).
+  spawnIntervalTicks: 10
+  
+  # Orbit duration scales with tier: orbitTicks = orbitTicksBase + (tier-1)*orbitTicksPerTier
+  orbitTicksBase: 40
+  orbitTicksPerTier: 10
+  
+  # Converge duration (the items collapse into the player before rewards are granted)
+  convergeTicks: 20
+  
+  # Orbit speed
+  angularVelocityDegPerTick: 12.0
+  
+  # Subtle vertical bob while orbiting
+  bobAmplitude: 0.15
+  bobPeriodTicks: 20
+  
+  # Display scale (1.0 = normal)
+  itemScale: 0.9
+  
+  sounds:
+    spawn: entity.enderman.teleport
+    converge: block.beacon.activate
+    complete: ui.toast.challenge_complete
+  
+  particles:
+    onSpawn: firework
+    onComplete: totem
+  
+  # Optional screen flash per item reveal (disabled by default)
+  flashEffect:
+    enabled: false
+    type: darkness
+    durationTicks: 10
+    amplifier: 0
+    showParticles: false
+    showIcon: false
+
+# Curated selection lists used by the in-game Sound/Particle picker GUIs.
+# You can add/remove entries freely (invalid enum names are ignored).
+libraries:
+  sounds:
+  - BLOCK_AMETHYST_BLOCK_CHIME
+  - ENTITY_PLAYER_LEVELUP
+  - ENTITY_EXPERIENCE_ORB_PICKUP
+  - ENTITY_ENDERMAN_TELEPORT
+  - UI_BUTTON_CLICK
+  - UI_TOAST_IN
+  - UI_TOAST_CHALLENGE_COMPLETE
+  - BLOCK_BEACON_POWER_SELECT
+  - BLOCK_BEACON_ACTIVATE
+  - ENTITY_FIREWORK_ROCKET_LAUNCH
+  - ENTITY_FIREWORK_ROCKET_TWINKLE
+  - ENTITY_GENERIC_EXPLODE
+  - ITEM_TOTEM_USE
+  - BLOCK_ENCHANTMENT_TABLE_USE
+  - ENTITY_LIGHTNING_BOLT_THUNDER
+  particles:
+  - FIREWORKS_SPARK
+  - END_ROD
+  - CRIT
+  - FLAME
+  - CLOUD
+  - SMOKE
+  - SOUL_FIRE_FLAME
+  - DRAGON_BREATH
+  - PORTAL
+  - ENCHANTMENT_TABLE
+  - NOTE
+  - HEART
+  - VILLAGER_HAPPY
+  - TOTEM
+  - ELECTRIC_SPARK

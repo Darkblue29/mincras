@@ -1,0 +1,64 @@
+id: tier3_example
+tier: 3
+permission: mcwar.crates.use.tier3_example
+
+animation:
+  # Row 0 ends at durationTicks.
+  # Row 1 ends at durationTicks + cascadeDelayTicks.
+  # Row 2 ends at durationTicks + 2*cascadeDelayTicks, etc.
+  durationTicks: 120
+  cascadeDelayTicks: 20
+  postWinDelayTicks: 20
+
+  # Spin feel
+  ticksPerStep: 4
+  maxTickDelay: 14
+  easingPower: 2.4
+
+  tickSound: "UI_BUTTON_CLICK"
+  # NOTE_BLOCK_PLING is commonly repurposed in resource packs (e.g., reload SFX).
+  landSound: "BLOCK_AMETHYST_BLOCK_CHIME"
+  winSound: "ENTITY_PLAYER_LEVELUP"
+
+  particles:
+    onTick: "CRIT"
+    onLand: "FIREWORK"
+    onWin: "TOTEM_OF_UNDYING"
+
+containerRoot:
+  pickMode: PICK_N
+  pickCount: 1 # Ignored by tiered crates; each tier row resolves exactly 1 reward.
+  allowDuplicates: false
+  entries:
+    - type: ITEM
+      chance: 100.0
+      item:
+        material: IRON_SWORD
+        amount: 1
+    - type: ITEM
+      chance: 60.0
+      item:
+        material: COOKED_BEEF
+        amount: 8
+    - type: ITEM
+      chance: 35.0
+      item:
+        material: GOLDEN_APPLE
+        amount: 1
+    - type: CONTAINER
+      chance: 100.0
+      container:
+        pickMode: PICK_N
+        pickCount: 1
+        allowDuplicates: false
+        entries:
+          - type: ITEM
+            chance: 70.0
+            item:
+              material: ARROW
+              amount: 24
+          - type: ITEM
+            chance: 30.0
+            item:
+              material: SPECTRAL_ARROW
+              amount: 12

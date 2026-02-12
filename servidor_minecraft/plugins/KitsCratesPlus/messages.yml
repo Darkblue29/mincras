@@ -1,0 +1,167 @@
+# Kits & Crates+ (Duq)
+# Test server: mcwar.co
+# MiniMessage formatting: https://docs.advntr.dev/minimessage/format.html
+
+prefix: "<dark_gray>[<gradient:#ff7a18:#af002d><bold>Kits & Crates+</bold></gradient><dark_gray>] <gray>"
+
+general:
+  noPermission: "<red>No permission. <gray>(mcwar.co)"
+  playerOnly: "<red>Only players can use that."
+  playerNotFound: "<red>Player not found: <white>%player%</white>"
+  reloaded: "<green>Reloaded. <gray>Need help? Join <aqua>mcwar.co</aqua>"
+
+gui:
+  noSpace: "<red>No free slots in this editor."
+  promptsUnavailable: "<red>Chat prompts are unavailable right now. Reopen the editor and try again."
+
+  # Editor feedback (shown when clicking buttons in GUIs)
+  changedPickMode: "<green>PickMode set to <white>%mode%</white>."
+  changedPickCount: "<green>PickCount set to <white>%count%</white>."
+  changedAllowDuplicates: "<green>Allow Duplicates: <white>%value%</white>."
+  changedTier: "<green>Crate tier set to <white>%tier%</white>."
+  addedItem: "<green>Added item to the pool."
+  removedEntry: "<gray>Removed entry."
+  addedContainer: "<green>Added a nested container. <gray>Left-click it to open."
+  addedEffect: "<green>Added effect: <white>%type%</white>. <gray>Configure it now."
+
+  tips:
+    crateEditor: "<gray>Crate Editor Tips: <white>Shift-click</white> items to add • <white>Right-click</white> to set chance • <white>Shift-click</white> (empty cursor) to delete • <aqua>mcwar.co</aqua>"
+    kitContainer: "<gray>Kit Pool Tips: <white>Shift-click</white> items to add • <white>Right-click</white> to set chance • <white>Shift-click</white> delete • <aqua>mcwar.co</aqua>"
+    kitInventory: "<gray>Kit Inventory Tips: place items in slots • <white>Right-click</white> slot to set chance • <white>Add Container Token</white> for rollable pools • <aqua>mcwar.co</aqua>"
+
+  inventoryKit:
+    selectedSlot: "<gray>Selected slot <white>%slot%</white>. Click another slot to swap. <dark_gray>(Shift+Click clears)</dark_gray>"
+    containerPlaced: "<green>Placed a <gold>Container Token</gold> in slot <white>%slot%</white>. <gray>Left-click to edit contents."
+
+  crate:
+    # Animated title frames
+    titleFrames:
+      - "<gradient:#ffb300:#ffffff><bold>OPENING %id%</bold></gradient> <dark_gray>✦</dark_gray> <gray>Tier %tier%</gray> <dark_gray>✦</dark_gray> <aqua>mcwar.co</aqua>"
+      - "<gradient:#ffffff:#ffb300><bold>OPENING %id%</bold></gradient> <dark_gray>✦</dark_gray> <gray>Tier %tier%</gray> <dark_gray>✦</dark_gray> <aqua>mcwar.co</aqua>"
+    titleFrameTicks: 4
+
+  kit:
+    inventoryEditorTitle: "<gradient:#9b59b6:#3498db><bold>Kit Editor</bold></gradient> <gray>%id%</gray>"
+
+  kitContainerEditor:
+    title: "<gradient:#9b59b6:#3498db><bold>Kit Pool Editor</bold></gradient> <gray>%id%</gray>"
+
+  nestedContainerEditor:
+    title: "<gradient:#f39c12:#f1c40f><bold>Nested Container</bold></gradient> <gray>(mcwar.co)"
+
+  crateEditor:
+    title: "<gradient:#f39c12:#f1c40f><bold>Crate Editor</bold></gradient> <gray>%id%</gray>"
+
+  actionTypeMenu:
+    title: "<gold><bold>Add Effect</bold></gold> <dark_gray>•</dark_gray> <aqua>mcwar.co</aqua>"
+    self: "<yellow>Self Command"
+    console: "<yellow>Console Command"
+    sound: "<yellow>Sound"
+    particle: "<yellow>Particle"
+
+  picker:
+    prev: "<gray><bold><< Prev</bold></gray>"
+    next: "<gray><bold>Next >></bold></gray>"
+    done: "<green><bold>Done</bold></green>"
+    cancel: "<red><bold>Cancel</bold></red>"
+
+  soundPicker:
+    title: "<gold><bold>Select Sound</bold></gold> <dark_gray>•</dark_gray> <aqua>mcwar.co</aqua>"
+    current: "<yellow>Current: <white>%sound%</white> <gray>(vol %volume%, pitch %pitch%)"
+    selected: "<green>Selected sound: <white>%sound%</white>"
+    applied: "<green>Sound set: <white>%sound%</white> <gray>(vol %volume%, pitch %pitch%)"
+    selectFirst: "<red>Select a sound first."
+    changedVolume: "<green>Volume: <white>%value%</white>"
+    changedPitch: "<green>Pitch: <white>%value%</white>"
+    volumeMinus: "<yellow>Volume -"
+    volumePlus: "<yellow>Volume +"
+    pitchMinus: "<yellow>Pitch -"
+    pitchPlus: "<yellow>Pitch +"
+
+  particlePicker:
+    title: "<gold><bold>Select Particle</bold></gold> <dark_gray>•</dark_gray> <aqua>mcwar.co</aqua>"
+    current: "<yellow>Current: <white>%particle%</white> <gray>(count %count%)"
+    selected: "<green>Selected particle: <white>%particle%</white>"
+    applied: "<green>Particle set: <white>%particle%</white> <gray>(count %count%)"
+    selectFirst: "<red>Select a particle first."
+    changedCount: "<green>Count: <white>%value%</white>"
+    countMinus5: "<yellow>-5"
+    countPlus5: "<yellow>+5"
+    countMinus1: "<yellow>-1"
+    countPlus1: "<yellow>+1"
+
+prompts:
+  cancelled: "<gray>Cancelled."
+  saved: "<green>Saved. <gray>(mcwar.co)"
+
+  selfCommand:
+    start: "<yellow>Type the <white>SELF</white> command (no /). <gray>Use %player% and %uuid%. Type <red>cancel</red> to abort. <dark_gray>(Editor will reopen)"
+    invalid: "<red>Command cannot be empty. Try again or type <red>cancel</red>."
+
+  consoleCommand:
+    start: "<yellow>Type the <white>CONSOLE</white> command (no /). <gray>Use %player% and %uuid%. Type <red>cancel</red> to abort. <dark_gray>(Editor will reopen)"
+    invalid: "<red>Command cannot be empty. Try again or type <red>cancel</red>."
+
+  sound:
+    start: "<yellow>Type a sound: <white>SOUND_ID [volume] [pitch]</white> <gray>Example: <white>ENTITY_PLAYER_LEVELUP 1 1</white>. Type <red>cancel</red> to abort."
+    invalid: "<red>Invalid sound. Example: <white>ENTITY_PLAYER_LEVELUP 1 1</white>"
+
+  particle:
+    start: "<yellow>Type a particle: <white>PARTICLE_ID [count] [offsetX] [offsetY] [offsetZ] [extra]</white> <gray>Example: <white>FIREWORK 20 0.3 0.5 0.3 0.02</white>. Type <red>cancel</red> to abort."
+    invalid: "<red>Invalid particle. Example: <white>FIREWORK 20 0.3 0.5 0.3 0.02</white>"
+
+kit:
+  help:
+    - "<gradient:#9b59b6:#3498db><bold>Kits & Crates+</bold></gradient> <gray>•</gray> <aqua>mcwar.co</aqua>"
+    - "<yellow>/kit <id> <gray>- claim a kit"
+    - "<yellow>/kit <id> <player> <gray>- admin give a kit"
+    - "<yellow>/kit create <id> [INVENTORY|CONTAINER]"
+    - "<yellow>/kit edit <id>"
+    - "<yellow>/kit delete <id>"
+    - "<yellow>/kit reload"
+  usageCreate: "<yellow>Usage: <white>/kit create <id> [type]"
+  usageEdit: "<yellow>Usage: <white>/kit edit <id>"
+  usageDelete: "<yellow>Usage: <white>/kit delete <id>"
+  usageClaimConsole: "<red>Console must specify a player: <white>/kit <id> <player>"
+  unknown: "<red>Unknown kit: <white>%id%</white>"
+  noPermissionUse: "<red>You do not have permission to use kit <white>%id%</white>."
+  cooldown: "<red>Kit is on cooldown: <white>%seconds%s</white> remaining."
+  created: "<green>Created kit <white>%id%</white>."
+  createFailed: "<red>Failed to create kit <white>%id%</white>."
+  deleted: "<green>Deleted kit <white>%id%</white>."
+  reloaded: "<green>Kits reloaded. <gray>(%count% loaded)"
+  gave: "<green>Gave kit <white>%id%</white> to <white>%player%</white>."
+  received: "<green>You received kit <white>%id%</white>."
+  applyFailed: "<red>Kit <white>%id%</white> is not configured correctly. <gray>(mcwar.co)"
+  editorSaved: "<green>Saved kit <white>%id%</white>."
+  editorClosed: "<gray>Closed kit editor."
+
+crate:
+  help:
+    - "<gradient:#f39c12:#f1c40f><bold>Kits & Crates+</bold></gradient> <gray>•</gray> <aqua>mcwar.co</aqua>"
+    - "<yellow>/crate open <id> <gray>- open a crate (or kit-as-crate)"
+    - "<yellow>/crate open <id> <player> <gray>- admin force-open"
+    - "<yellow>/crate give <player> <id> [amount]"
+    - "<yellow>/crate create <id> [tier]"
+    - "<yellow>/crate edit <id>"
+    - "<yellow>/crate delete <id>"
+    - "<yellow>/crate reload"
+  usageOpen: "<yellow>Usage: <white>/crate open <id> [player]"
+  usageGive: "<yellow>Usage: <white>/crate give <player> <id> [amount]"
+  usageCreate: "<yellow>Usage: <white>/crate create <id> [tier]"
+  usageEdit: "<yellow>Usage: <white>/crate edit <id>"
+  usageDelete: "<yellow>Usage: <white>/crate delete <id>"
+  unknown: "<red>Unknown crate/kit: <white>%id%</white>"
+  noPermissionUse: "<red>You do not have permission to open crate <white>%id%</white>."
+  notConfigured: "<red>Crate <white>%id%</white> is not configured yet (missing containerRoot)."
+  rollFailed: "<red>Crate roll failed for <white>%id%</white>."
+  openedFor: "<green>Opened crate <white>%id%</white> for <white>%player%</white>."
+  gaveItems: "<green>Gave <white>%amount%</white>x crate item <white>%id%</white> to <white>%player%</white>."
+  receivedRewards: "<green>You received <white>%amount%</white> item(s) from <white>%id%</white>."
+  created: "<green>Created crate <white>%id%</white>."
+  createFailed: "<red>Failed to create crate <white>%id%</white>."
+  deleted: "<green>Deleted crate <white>%id%</white>."
+  deleteFailed: "<red>Failed to delete crate <white>%id%</white>."
+  editingKit: "<gray>Editing kit <white>%id%</white> (crate shares the same loot table)."
+  saved: "<green>Saved crate <white>%id%</white>."
+  editorClosed: "<gray>Closed crate editor."

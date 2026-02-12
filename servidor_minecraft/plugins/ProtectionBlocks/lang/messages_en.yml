@@ -1,0 +1,277 @@
+# Here you can create your own custom placeholders to use it in language config.
+# Key = Placeholder, Value = Replacer.
+Placeholders:
+  '%red%': '#ea3131'
+  '%green%': '#74ea31'
+  '%gray%': '#aaa8a8'
+Command:
+  Editor:
+    Desc: Open the region editor.
+  Give:
+    Desc: Give specified region block to a player.
+    Usage: <region block> <player> <amount>
+    Done: '#aaa8a8Given #74ea31x%amount% %region_block_name%#aaa8a8 to #74ea31%player_name%#aaa8a8.'
+  Teleport:
+    Desc: Teleport to the region block.
+    Usage: <region_id>
+    Done: '#74ea31You have successfully teleported to the region block!'
+  Menu:
+    Desc: Open the Menu of region block.
+    Usage: <region_id>
+    Done: '#74ea31The region block menu is open!'
+  Preview:
+    Desc: Open the Preview Menu of region blocks.
+Error:
+  Region_Block:
+    Invalid: '#ea3131Invalid Region Block!'
+  Region:
+    Not_Found: '#ea3131Region not found!'
+Messages:
+  Region:
+    Success:
+      Created: '#74ea31New Region successfully created!'
+      Life_Time_Created: '<! prefix:"false" !>#74ea31The new region has been successfully created.#ea3131Be careful#74ea31, this region will be destroyed in: #e39fff%region_expire_in%'
+      Destroy:
+        Self: '#74ea31Region #aaa8a8⧈%region_id%#74ea31 successfully removed!'
+        Target: '#e39fffYou''ve just destroyed a region #aaa8a8⧈ #e39fff!'
+      Damaged:
+        Target: '#74ea31Region #aaa8a8⧈%region_id%#74ea31 has been damaged, but it''s not destroyed yet'
+        Self:
+        - <! prefix:"false" !>#ea3131&l!! ALARM !!
+        - '#3196eaYour Region #ea9631%region_location%#3196ea has been damaged!#ea3131'
+        - He has &l%region_health%#ea3131 health(s) left and will be destroyed!
+    Error:
+      Nearby_Region: '#ea3131You cannot create a region here, as it will cross over with another one!'
+      Limit: '#ea3131You cannot create a region of this type because you have reached the limit!'
+      Global_Limit: '#ea3131You cannot create a region because you have reached the limit!'
+    Notify:
+      Destroy:
+      - <! prefix:"false" !>#ea3131&l!! ALARM !!
+      - '#3196eaYour Region #ea9631%region_location%#3196ea was destroyed!'
+      Enter: '#aaa8a8You''ve entered a #e39fff%region_owner_name%#aaa8a8 region'
+      Exit: '#aaa8a8You''ve leave a #e39fff%region_owner_name%#aaa8a8 region'
+      Break: '#ea9631Hey!#aaa8a8 I''m sorry, but you #ea9631can''t break this block#aaa8a8 here!'
+      Interact: '#ea9631Hey!#aaa8a8 I''m sorry, but you #ea9631can''t interact with this#aaa8a8 here!'
+  Menu:
+    No_Access: '#ea3131You don''t have access to open this menu!'
+    Deposit:
+      No_Enough_Money: '#ea3131You don''t have enough money to pay for it!'
+      Success: '#74ea31The life of the region has been successfully paid for!'
+    Members:
+      Kick:
+        Success: '#74ea31Member #ffeea2%member_name%#74ea31 success removed from region!'
+Message:
+  Region:
+    Create:
+      Error:
+        Event: '#ea3131You cannot create a region for unknown reasons'
+Editor:
+  Region:
+    Block:
+      Enter:
+        Create: '#aaa8a8Enter #74ea31unique #aaa8a8block #74ea31identifier#aaa8a8...'
+        World: '#aaa8a8Enter #74ea31world name#aaa8a8...'
+        Name: '#aaa8a8Enter #74ea31name#aaa8a8...'
+        Currency: '#aaa8a8Enter #74ea31currency#aaa8a8...'
+        Value: '#aaa8a8Enter #74ea31value#aaa8a8...'
+        Life_Time: '#aaa8a8Enter #74ea31name #aaa8a8and #74ea31time in seconds#aaa8a8...'
+        HologramTemplate: '#aaa8a8Enter #74ea31hologram template #aaa8a8...'
+      Error:
+        Exist: '&cBlock already exists!'
+        Currency:
+          Not_Found: '&cCurrency not found!'
+      Object:
+        Name: '#ead931&l%region_block_name% &7(ID: &f%region_block_id%&7)'
+        Lore:
+        - '#aaa8a8(#e8f2f2Left-Click#aaa8a8 to Configure#aaa8a8)'
+        - '#aaa8a8(#e8f2f2Shift-Right#aaa8a8 to Delete #ea3131(No Undo)#aaa8a8)'
+      Create:
+        Name: '#ead931&lNew Region Block'
+        Lore: []
+      Change:
+        Item:
+          Name: ''
+          Lore:
+          - '#aaa8a8Block Item'
+          - ''
+          - '#aaa8a8Sets the region block.'
+          - '#aaa8a8This block will be used as the root of the region'
+          - ''
+          - '#aaa8a8(#e8f2f2Drag & Drop#aaa8a8 to Replace Item#aaa8a8)'
+          - '#aaa8a8(#e8f2f2Right-Click#aaa8a8 to Get a Copy#aaa8a8)'
+        Name:
+          Name: '#ead931&lName'
+          Lore:
+          - '#aaa8a8Sets the displayed name of the block'
+          - '#aaa8a8Used in messages, menus & hologram'
+          - ''
+          - '#ead931&lCurrent:'
+          - '#ead931▪ #aaa8a8Displayed Name: #ead931%region_block_name%#aaa8a8 (#e8f2f2Left-Click#aaa8a8)'
+        Size:
+          Name: '#ead931&lRegion Size'
+          Lore:
+          - '#aaa8a8Sets what the region size'
+          - '#aaa8a8will be for this block'
+          - '#aaa8a8'
+          - '#aaa8a8#ea3131**Experimental function**'
+          - '#aaa8a8'
+          - '#aaa8a8#ea3131I do not recommend that you'
+          - '#aaa8a8#ea3131set infinity to true,'
+          - '#aaa8a8#ea3131because this will slow down both'
+          - '#aaa8a8#ea3131the server and the plugin very much.'
+          - ''
+          - '#ead931&lCurrent:'
+          - '#ead931▪ #aaa8a8Radius: #ead931%region_block_size%#aaa8a8 (#e8f2f2Left-Click#aaa8a8)'
+          - '#ead931▪ #aaa8a8Infinity Y: #ead931%region_infinity_y_blocks%#aaa8a8 (#e8f2f2Right-Click#aaa8a8)'
+        Strength:
+          Name: '#ead931&lRegion Strength'
+          Lore:
+          - '#aaa8a8Sets the block strength of the region.'
+          - '#aaa8a8The block must be broken as'
+          - '#aaa8a8many times as its strength.'
+          - ''
+          - '#ead931&lCurrent:'
+          - '#ead931▪ #aaa8a8Strength: #ead931%region_block_strength%#aaa8a8 (#e8f2f2Left-Click#aaa8a8)'
+        Deposit:
+          Name: '#ead931&lRegion Deposit'
+          Lore:
+          - '#aaa8a8Sets the sum of the extension of the block''s life'
+          - '#aaa8a8Sets the currency for payment'
+          - ''
+          - '#ead931&lCurrent:'
+          - '#ead931▪ #aaa8a8Price: #ead931%region_block_deposit_price%#aaa8a8 (#e8f2f2Left-Click#aaa8a8)'
+          - '#ead931▪ #aaa8a8Currency: #ead931%region_block_deposit_currency%#aaa8a8 (#e8f2f2Right-Click#aaa8a8)'
+        Hologram:
+          Name: '#ead931&lHologram'
+          Lore:
+          - '#aaa8a8Creates hologram above block'
+          - '#aaa8a8with certain text template.'
+          - '#aaa8a8#aaa8a8Example:'
+          - '#aaa8a8#aaa8a8You can disable hologram and create ''invisible'' region'
+          - '#aaa8a8'
+          - '#aaa8a8#aaa8a8If set to #ffeea2In Region#aaa8a8,'
+          - '#aaa8a8#aaa8a8the region hologram will only be displayed'
+          - '#aaa8a8#aaa8a8when the player is in the region'
+          - ''
+          - '#ead931&lCurrent:'
+          - '#ead931▪ #aaa8a8In Region Only: #ead931%region_block_hologram_in_region%#aaa8a8 (#e8f2f2[Q] Drop Key#aaa8a8)'
+          - '#ead931▪ #aaa8a8Enabled: #ead931%region_block_hologram_enabled%#aaa8a8 (#e8f2f2Left-Click#aaa8a8)'
+          - '#ead931▪ #aaa8a8Template: #ead931%region_block_hologram_template%#aaa8a8 (#e8f2f2Right-Click#aaa8a8)'
+        Life_Time:
+          Name: '#ead931&lRegion Life Time'
+          Lore:
+          - '#aaa8a8All regions can be made to have a'
+          - '#aaa8a8life time with its extension.'
+          - '#aaa8a8You can add a group and'
+          - '#aaa8a8set any time for it.'
+          - '#aaa8a8After this time the region will be'
+          - '#aaa8a8deleted as well as the block itself'
+          - '#aaa8a8'
+          - '#aaa8a8#ea3131You can only change it in the &lconfig.yml#ea3131 file'
+          - '#ead931&lCurrent:'
+          - '#ead931▪ #aaa8a8Enabled: #ead931%region_block_life_time_enabled%#aaa8a8 (#e8f2f2Left-Click#aaa8a8)'
+        Place_Limit:
+          Name: '#ead931&lRegion Place Limit'
+          Lore:
+          - '#aaa8a8You can set a group limit to place this block.'
+          - '#aaa8a8If a player reaches the limit,'
+          - '#aaa8a8he will not be able to create a region of this block'
+          - '#aaa8a8'
+          - '#aaa8a8#ea3131You can only change it in the &lconfig.yml#ea3131 file'
+          - '#ead931&lCurrent:'
+          - '#ead931▪ #aaa8a8Enabled: #ead931%region_block_place_limit_enabled%#aaa8a8 (#e8f2f2Left-Click#aaa8a8)'
+        Group_Size:
+          Name: '#ead931&lRegion Groups Size'
+          Lore:
+          - '#aaa8a8You can set the region size'
+          - '#aaa8a8to individual for per group'
+          - '#aaa8a8'
+          - '#aaa8a8#ea3131You can only change it in the &lconfig.yml#ea3131 file'
+          - '#ead931&lCurrent:'
+          - '#ead931▪ #aaa8a8Enabled: #ead931%region_block_group_size_enabled%#aaa8a8 (#e8f2f2Left-Click#aaa8a8)'
+        Worlds:
+          Name: '#ead931&lRegion Worlds'
+          Lore:
+          - '#aaa8a8List of worlds where this'
+          - '#aaa8a8region block will be available'
+          - ''
+          - '#ead931&lCurrent:'
+          - '#ead931▪ #aaa8a8List: #ead931%region_block_worlds%'
+          - ''
+          - '#aaa8a8(#e8f2f2Left-Click#aaa8a8 to Add world#aaa8a8)'
+          - '#aaa8a8(#e8f2f2Shift-Right#aaa8a8 to Clear#aaa8a8)'
+      Breakers:
+        Navigate:
+          Name: '#ead931&lRegion Breakers'
+          Lore:
+          - '#aaa8a8#ead931Breakers #aaa8a8-#ffeea2 Items that can destroy a region'
+          - '#aaa8a8(#e8f2f2Left-Click#aaa8a8 to Navigate#aaa8a8)'
+        Create:
+          Name: '#ead931&lNew Breaker'
+          Lore:
+          - ''
+          - '#aaa8a8#74ea31Note#aaa8a8:'
+          - '#aaa8a8If you added TNT,'
+          - '#aaa8a8it means that the block can be'
+          - '#aaa8a8broken with a TNT blast'
+          - ''
+          - '#aaa8a8(#e8f2f2Drag & Drop#aaa8a8 to Add#aaa8a8)'
+        Clear:
+          Name: '#ead931&lClear breakers'
+          Lore:
+          - '#aaa8a8(#e8f2f2Left-Click#aaa8a8 to Clear#aaa8a8)'
+        Object:
+          Name: ''
+          Lore:
+          - '#ead931▪ #aaa8a8Damage Type: #ead931%region_block_breaker_damage_type%#aaa8a8 (#e8f2f2Left-Click#aaa8a8)'
+          - ''
+          - '#aaa8a8(#e8f2f2Drag & Drop#aaa8a8 to Replace Item#aaa8a8)'
+          - '#aaa8a8(#e8f2f2Drag & Drop#aaa8a8 to Delete #ea3131(No Undo)#aaa8a8)'
+      Flags:
+        Navigate:
+          Name: '#ead931&lRegion Flags'
+          Lore:
+          - '#aaa8a8(#e8f2f2Left-Click#aaa8a8 to Navigate#aaa8a8)'
+      Recipe:
+        Navigate:
+          Name: '#ead931&lBlock Recipe'
+          Lore:
+          - '#aaa8a8Create a crafting recipe for this block'
+          - '#aaa8a8'
+          - '#aaa8a8#ead931Enabled: %region_block_recipe_enabled%#aaa8a8 (#e8f2f2[Q] Drop Key#aaa8a8)'
+          - '#aaa8a8(#e8f2f2Left-Click#aaa8a8 to Navigate#aaa8a8)'
+          - '#aaa8a8(#e8f2f2Shift-Right#aaa8a8 to Clear#aaa8a8)'
+        Item:
+          Name: ''
+          Lore:
+          - ''
+          - '#aaa8a8(#e8f2f2Drag & Drop#aaa8a8 to Replace Item#aaa8a8)'
+          - '#aaa8a8(#e8f2f2Right-Click#aaa8a8 to Get a Copy#aaa8a8)'
+        Block_Item:
+          Name: ''
+          Lore:
+          - '#aaa8a8The result, which is a private block'
+        Clear:
+          Name: '#ead931&l#ea3131Clear (No Undo)'
+          Lore: []
+      Flag:
+        Object:
+          Name: '#ead931&l%flag_name%'
+          Lore:
+          - '#ead931▪ #aaa8a8Enabled: #ead931%flag_enabled%#aaa8a8 (#e8f2f2Left-Click#aaa8a8)'
+          - '#ead931▪ #aaa8a8Trigger by Non Members: #ead931%flag_trigger_by_non_members%#aaa8a8 (#e8f2f2Right-Click#aaa8a8)'
+          - '#ead931▪ #aaa8a8Trigger Roles: #ead931%flag_trigger_roles%'
+          - ''
+          - '#aaa8a8(#e8f2f2Shift-Left#aaa8a8 to Change Role Access#aaa8a8)'
+          - '#aaa8a8(#e8f2f2Shift-Right#aaa8a8 to Clear Role Access#aaa8a8)'
+    Enter:
+      Player_Name: '#aaa8a8Enter #74ea31player name#aaa8a8...'
+    Members:
+      Error:
+        Player:
+          Not_Found: '&cPlayer not found!'
+          Already: '&cPlayer is already in your region!'
+DamageType:
+  EXPLODE: Explode
+  HAND: Hand
+  TOOLS: Tools

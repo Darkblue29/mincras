@@ -1,0 +1,49 @@
+---
+helpCommand:
+  aliases:
+  - "help"
+  description: "Show a list of all commands"
+  permission: ""
+  syntax: ""
+  enabled: true
+  cooldownInSeconds: 0
+reloadCommand:
+  aliases:
+  - "reload"
+  description: "Reload the plugin configurations"
+  permission: "iridiumenchants.reload"
+  syntax: ""
+  enabled: true
+  cooldownInSeconds: 0
+giveCommand:
+  aliases:
+  - "give"
+  description: "Give a player an enchantment crystal"
+  permission: "iridiumenchants.give"
+  syntax: "%prefix% &7/ce give <player> <enchant> <level>"
+  enabled: true
+  cooldownInSeconds: 0
+listCommand:
+  aliases:
+  - "list"
+  description: "List all custom enchantments"
+  permission: ""
+  syntax: ""
+  enabled: true
+  cooldownInSeconds: 0
+aboutCommand:
+  aliases:
+  - "about"
+  description: "Display plugin info"
+  permission: ""
+  syntax: ""
+  enabled: true
+  cooldownInSeconds: 0
+gkitsGiveCommand:
+  aliases:
+  - "give"
+  description: "Give a player a gkit"
+  permission: "iridiumenchants.gkits.give"
+  syntax: "%prefix% &7/gkit give <player> <gkit>"
+  enabled: true
+  cooldownInSeconds: 0

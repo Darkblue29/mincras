@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- do_not_remove: published-with-gradle-metadata -->
+<modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.mqzn</groupId>
+  <artifactId>Lotus</artifactId>
+  <version>1.6.0</version>
+  <name>Mqzn/Lotus</name>
+  <description>Simple but powerful spigot menus api</description>
+  <url>https://github.com/Mqzn/Lotus</url>
+  <inceptionYear>2024</inceptionYear>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://api.github.com/licenses/mit</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>Mqzn</id>
+      <name>Mazen</name>
+      <email></email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git://github.com/Mqzn/Lotus.git</connection>
+    <developerConnection>scm:git://github.com/Mqzn/Lotus.git</developerConnection>
+    <url>git://github.com/Mqzn/Lotus.git</url>
+  </scm>
+</project>

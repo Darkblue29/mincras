@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- This module was also published with a richer model, Gradle metadata,  -->
+  <!-- which should be used instead. Do not delete the following line which  -->
+  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
+  <!-- that they should prefer consuming it instead. -->
+  <!-- do_not_remove: published-with-gradle-metadata -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>dev.velix</groupId>
+  <artifactId>imperat-adventure</artifactId>
+  <version>1.9.7</version>
+  <name>Imperat</name>
+  <description>A modern customizable command framework.</description>
+  <url>https://github.com/VelixDevelopments/Imperat/</url>
+  <inceptionYear>2024</inceptionYear>
+  <licenses>
+    <license>
+      <name>MIT</name>
+      <url>https://opensource.org/licenses/MIT</url>
+      <distribution>https://mit-license.org/</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>mqzn</id>
+      <name>Mqzn</name>
+      <url>https://github.com/Mqzn/</url>
+    </developer>
+    <developer>
+      <id>iiahmedyt</id>
+      <name>iiAhmedYT</name>
+      <url>https://github.com/iiAhmedYT/</url>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/VelixDevelopments/Imperat.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/VelixDevelopments/Imperat.git</developerConnection>
+    <url>https://github.com/VelixDevelopments/Imperat/</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>net.kyori</groupId>
+      <artifactId>adventure-api</artifactId>
+      <version>4.20.0</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>
